@@ -1,0 +1,51 @@
+{
+  "name": "FFSpecialKit",
+  "version": "0.1.0",
+  "summary": "A short description of FFSpecialKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/BJComponent/FFSpecialKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhangwenjun0630@163.com": "zhangwenjun@xiaobu121.com"
+  },
+  "source": {
+    "git": "https://github.com/BJComponent/FFSpecialKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FFSpecialKit/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "YYWebImage": [
+
+    ],
+    "ReactiveCocoa": [
+
+    ],
+    "FFMainViewKit": [
+
+    ],
+    "FFReformerKeysKit": [
+
+    ],
+    "FFConfigsKit": [
+
+    ],
+    "FFAPIs": [
+
+    ],
+    "FFToolsKit": [
+
+    ],
+    "FFCategoryKit": [
+
+    ]
+  }
+}
