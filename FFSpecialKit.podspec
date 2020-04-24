@@ -60,4 +60,6 @@ TODO: Add long description of the pod here.
   s.dependency 'FFAPIs'
   s.dependency 'FFToolsKit'
   s.dependency 'FFCategoryKit'
+  
+  s.dependency 'FFAuhtorKit_Category'
 end

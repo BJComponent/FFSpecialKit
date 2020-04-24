@@ -14,15 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CTMediator (28)
   - FFAPIs (0.1.1):
     - AFNetworking
     - FFToolsKit (~> 0.1.0)
+  - FFAuhtorKit_Category (0.1.0):
+    - CTMediator
+    - FFAPIs
   - FFCategoryKit (0.1.1)
   - FFConfigsKit (0.1.0)
   - FFMainViewKit (0.1.0)
   - FFReformerKeysKit (0.1.0)
   - FFSpecialKit (0.1.2):
     - FFAPIs
+    - FFAuhtorKit_Category
     - FFCategoryKit
     - FFConfigsKit
     - FFMainViewKit
@@ -56,6 +61,7 @@ PODS:
 
 DEPENDENCIES:
   - FFAPIs (~> 0.1.1)
+  - FFAuhtorKit_Category
   - FFCategoryKit (~> 0.1.1)
   - FFConfigsKit (~> 0.1.0)
   - FFMainViewKit (~> 0.1.0)
@@ -69,6 +75,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/BJComponent/BJSpecs.git:
     - FFAPIs
+    - FFAuhtorKit_Category
     - FFCategoryKit
     - FFConfigsKit
     - FFMainViewKit
@@ -76,6 +83,7 @@ SPEC REPOS:
     - FFToolsKit
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CTMediator
     - FMDB
     - Masonry
     - MBProgressHUD
@@ -90,12 +98,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CTMediator: 6a05e9f1098b2d2fbc9d19cc7f28e94c3a08b5d2
   FFAPIs: bcc33221e507f8b9a0eaaf9714a24c8c14235703
+  FFAuhtorKit_Category: 4c8f05c933d8ac9aa60280935cce3f4a9fa0989b
   FFCategoryKit: 63253315ef5c172add7aba54d081a3fa9b476762
   FFConfigsKit: 8c9a8191e8d542123d2d0f4581c266bb77e9a51e
   FFMainViewKit: dfb7534759134c572257ce3cc0b6c770a33a52b7
   FFReformerKeysKit: 042fe863756589319539e516b1c1abd9d238781d
-  FFSpecialKit: a6629febb45e40f036800547962d129e48ac7b8b
+  FFSpecialKit: 201c21c34523eb3dec932c47f91ef69d61b35f22
   FFToolsKit: 8968989c9d1e1320e1d9d034637dcff1eec2577f
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -105,6 +115,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: dae4a17194376306e957663c4d61deda0d0c0095
+PODFILE CHECKSUM: 35f6e238ac3e2b4747348072bf9709effc62de23
 
 COCOAPODS: 1.7.5

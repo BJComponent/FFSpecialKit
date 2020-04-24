@@ -17,6 +17,8 @@ target 'FFSpecialKit_Example' do
   pod 'FFConfigsKit', '~> 0.1.0'
   pod 'FFReformerKeysKit', '~> 0.1.0'
   pod 'FFMainViewKit', '~> 0.1.0'
+  
+  pod 'FFAuhtorKit_Category'
 
   target 'FFSpecialKit_Tests' do
     inherit! :search_paths
