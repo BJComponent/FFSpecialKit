@@ -19,11 +19,6 @@
     "ios": "8.0"
   },
   "source_files": "FFSpecialKit/Classes/Special/*",
-  "resource_bundles": {
-    "FFSpecialKit": [
-      "FFSpecialKit/Assets/*"
-    ]
-  },
   "dependencies": {
     "Masonry": [
 
