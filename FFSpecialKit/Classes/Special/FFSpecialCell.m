@@ -14,6 +14,7 @@
 #import <FFConfigsKit/FFConfigsKit-umbrella.h>
 #import <Masonry/Masonry.h>
 #import <FFCategoryKit/FFCategoryKit-umbrella.h>
+#import <FFReformerKeysKit/FFReformerKeysKit-umbrella.h>
 
 @interface FFSpecialCell ()
 
@@ -51,7 +52,6 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self setupUI];
         [self setLayout];
-//        [self handleData];
     }
     return self;
 }
@@ -139,11 +139,41 @@
         make.left.right.bottom.equalTo(self.backView);
         make.height.mas_equalTo(FFSpecialCellBottomViewHeight);
     }];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+    [tap addTarget:self action:@selector(tapAction)];
+    [self.headImgView addGestureRecognizer:tap];
+
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [self handleData];
+}
+
+
 #pragma mark - handle data
-//- (void)handleData {
-//
+- (void)handleData {
+    
+//    FFAuthorListReformer *reformer = [[FFAuthorListReformer alloc] init];
+//    NSDictionary *author = [reformer reformData:data[kAuthorReformer]];
+//    [self.pictureView yy_setImageWithURL:data[kSpecialPropertyListKeyPictureURL] placeholder:[UIImage imageNamed:@"placehodler"]];
+//    [self.headImgView yy_setImageWithURL:author[kAuthorPropertyListHeaderURL] placeholder:[UIImage imageNamed:@"pc_default_avatar"]];
+//    if (author[kAuthorPropertyListKeyAuthIcon]) {
+//        self.authImgView.image = author[kAuthorPropertyListKeyAuthIcon];
+//    }
+    
+    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
+    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
+    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
+    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
+    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
+    
+    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
+    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
+    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
+
 //    @weakify(self)
 //    [RACObserve(self, dataDict) subscribeNext:^(NSDictionary *data) {
 //        @strongify(self)
@@ -174,8 +204,14 @@
 //            }
 //        }];;
 //    }];
-//
-//}
+
+}
+
+- (void)tapAction {
+    if ([self.delegate respondsToSelector:@selector(cellHeaderIconDidClick:params:)]) {
+        [self.delegate cellHeaderIconDidClick:self.indexPath params:nil];
+    }
+}
 
 #pragma mark - getter
 - (UIView *)backView {
@@ -227,7 +263,9 @@
 
 - (UIImageView *)authImgView{
     if (_authImgView == nil) {
-        _authImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"personAuth"]];
+        NSInteger scale = [[UIScreen mainScreen] scale];
+        NSString *name = [NSString stringWithFormat:@"personAuth@%zdx",scale];
+        _authImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:name]];
     }
     return _authImgView;
 }

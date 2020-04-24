@@ -45,9 +45,9 @@ TODO: Add long description of the pod here.
 #     end
 #  end
   
-  # s.resource_bundles = {
-  #   'FFSpecialKit' => ['FFSpecialKit/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'FFSpecialKit' => ['FFSpecialKit/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
