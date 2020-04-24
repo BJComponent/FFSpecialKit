@@ -33,8 +33,7 @@
 - (id)fetchDataWithReformer:(NSDictionary<FFReformProtocol> *)reformer {
     NSMutableArray *tempArray = [NSMutableArray array];
     
-    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-    NSString *path = [currentBundle pathForResource:@"special_page" ofType:@"json"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"special_page" ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     for (NSDictionary *dict in jsonDict[@"result"]) {
