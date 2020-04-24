@@ -7,7 +7,9 @@
 //
 
 #import "FFSpecialCellBottomView.h"
-#import "FFSpecialKit.h"
+#import <Masonry/Masonry.h>
+#import <FFConfigsKit/FFConfigsKit-umbrella.h>
+#import <FFCategoryKit/FFCategoryKit-umbrella.h>
 
 @implementation FFSpecialCellBottomView
 
@@ -47,21 +49,21 @@
 
 - (UIButton *)readBtn{
     if (_readBtn == nil) {
-        _readBtn = [self createBtn:@"hp_count"];
+        _readBtn = [self createBtn:@""];
     }
     return _readBtn;
 }
 
 - (UIButton *)commentBtn{
     if (_commentBtn == nil) {
-        _commentBtn = [self createBtn:@"p_comment"];
+        _commentBtn = [self createBtn:@""];
     }
     return _commentBtn;
 }
 
 - (UIButton *)followBtn{
     if (_followBtn == nil) {
-        _followBtn = [self createBtn:@"p_zan"];
+        _followBtn = [self createBtn:@""];
     }
     return _followBtn;
 }

@@ -7,11 +7,13 @@
 //
 
 #import "FFSpecialCell.h"
-#import "FFSpecialKit.h"
 #import "FFSpecialCellBottomView.h"
-#import "FFSpecialListReformerKeys.h"
-#import "FFAuthorListReformerKeys.h"
+//#import "FFSpecialListReformerKeys.h"
+//#import "FFAuthorListReformerKeys.h"
 //#import "FFAuthorListReformer.h"
+#import <FFConfigsKit/FFConfigsKit-umbrella.h>
+#import <Masonry/Masonry.h>
+#import <FFCategoryKit/FFCategoryKit-umbrella.h>
 
 @interface FFSpecialCell ()
 
@@ -49,7 +51,7 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self setupUI];
         [self setLayout];
-        [self handleData];
+//        [self handleData];
     }
     return self;
 }
@@ -140,12 +142,12 @@
 }
 
 #pragma mark - handle data
-- (void)handleData {
-    
-    @weakify(self)
-    [RACObserve(self, dataDict) subscribeNext:^(NSDictionary *data) {
-        @strongify(self)
-    
+//- (void)handleData {
+//
+//    @weakify(self)
+//    [RACObserve(self, dataDict) subscribeNext:^(NSDictionary *data) {
+//        @strongify(self)
+//
 //        FFAuthorListReformer *reformer = [[FFAuthorListReformer alloc] init];
 //        NSDictionary *author = [reformer reformData:data[kAuthorReformer]];
 //        [self.pictureView yy_setImageWithURL:data[kSpecialPropertyListKeyPictureURL] placeholder:[UIImage imageNamed:@"placehodler"]];
@@ -171,9 +173,9 @@
 //                [self.delegate cellHeaderIconDidClick:self.indexPath params:nil];
 //            }
 //        }];;
-    }];
-    
-}
+//    }];
+//
+//}
 
 #pragma mark - getter
 - (UIView *)backView {

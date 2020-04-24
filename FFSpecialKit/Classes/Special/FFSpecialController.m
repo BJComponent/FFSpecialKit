@@ -7,14 +7,16 @@
 //
 
 #import "FFSpecialController.h"
-#import "FFSpecialKit.h"
 #import "SpecialAPIRequest.h"
 #import "FFSpecialListReformer.h"
+#import "FFSpecialDetailController.h"
 /// view
-#import "FFMainView.h"
+//#import "FFMainView.h"
 #import "FFSpecialCell.h"
 //#import "FFAuthorDetailController.h"
-#import "FFSpecialDetailController.h"
+#import <FFAPIs/FFAPIs-umbrella.h>
+#import <FFToolsKit/FFToolsKit-umbrella.h>
+#import <FFCategoryKit/FFCategoryKit-umbrella.h>
 
 @interface FFSpecialController ()<APIResponseProtocol,FFCellProtocol>
 

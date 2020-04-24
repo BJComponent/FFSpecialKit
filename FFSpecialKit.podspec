@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFSpecialKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of FFSpecialKit.'
 
 # This description is used to generate tags and improve search results.
@@ -29,8 +29,21 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  
+  s.source_files = 'FFSpecialKit/Classes/Special/*'
 
-  s.source_files = 'FFSpecialKit/Classes/**/*'
+#  s.subspec 'Special' do |ss|
+#    ss.source_files = 'FFSpecialKit/Classes/Special/*'
+#  end
+#
+#  s.subspec 'Special' do |ss|
+#     ss.subspec 'Detail' do |sss|
+#         sss.source_files = 'FFSpecialKit/Classes/Special/Detail/*'
+#     end
+#     ss.subspec 'Mainpage' do |sss|
+#         sss.source_files = 'FFSpecialKit/Classes/Special/Mainpage/*'
+#     end
+#  end
   
   # s.resource_bundles = {
   #   'FFSpecialKit' => ['FFSpecialKit/Assets/*.png']
