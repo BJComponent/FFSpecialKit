@@ -12,11 +12,9 @@ target 'FFSpecialKit_Example' do
   pod 'YYWebImage'
 #  pod 'ReactiveCocoa', '~> 2.5'
   
-  pod 'FFUtils'
   pod 'FFAPIs', '~> 0.1.2'
-  pod 'FFWdiget'
-  
-#  pod 'FFToolsKit'
+  pod 'FFUtils', '~> 0.1.2'
+  pod 'FFWdiget', '~> 0.1.0'
   
   pod 'FFAuhtorKit_Category'
 

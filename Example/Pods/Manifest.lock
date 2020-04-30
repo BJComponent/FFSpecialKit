@@ -49,8 +49,8 @@ DEPENDENCIES:
   - FFAPIs (~> 0.1.2)
   - FFAuhtorKit_Category
   - FFSpecialKit (from `../`)
-  - FFUtils
-  - FFWdiget
+  - FFUtils (~> 0.1.2)
+  - FFWdiget (~> 0.1.0)
   - Masonry
   - YYWebImage
 
@@ -85,6 +85,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: bd43567acaf7cbda529642cc768fb61bcde5b591
+PODFILE CHECKSUM: 364ceaffa699e680e25c0f75771bc5abe199ca5e
 
 COCOAPODS: 1.7.5
