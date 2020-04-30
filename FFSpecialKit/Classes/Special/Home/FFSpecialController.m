@@ -10,14 +10,10 @@
 #import "SpecialAPIRequest.h"
 #import "FFSpecialListReformer.h"
 #import "FFSpecialDetailController.h"
-/// view
-//#import "FFMainView.h"
 #import "FFSpecialCell.h"
-//#import "FFAuthorDetailController.h"
 #import <FFAPIs/FFAPIs-umbrella.h>
 #import <FFToolsKit/FFToolsKit-umbrella.h>
 #import <FFCategoryKit/FFCategoryKit-umbrella.h>
-
 #import <FFAuhtorKit_Category/FFAuhtorKit_Category-umbrella.h>
 
 @interface FFSpecialController ()<APIResponseProtocol,FFCellProtocol>

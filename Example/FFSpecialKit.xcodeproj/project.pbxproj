@@ -24,18 +24,18 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		921056B2939A51DCB43A2EF2 /* Pods_FFSpecialKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF8E9DB6E58665D6E2BA4F1 /* Pods_FFSpecialKit_Example.framework */; };
-		A4136D6C2452DEFF004FCD17 /* FFSpecialCellBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D592452DEFF004FCD17 /* FFSpecialCellBottomView.m */; };
-		A4136D6D2452DEFF004FCD17 /* SpecialAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D5F2452DEFF004FCD17 /* SpecialAPIRequest.m */; };
-		A4136D6E2452DEFF004FCD17 /* FFSpecialDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D612452DEFF004FCD17 /* FFSpecialDetailView.m */; };
-		A4136D6F2452DEFF004FCD17 /* FFSpecialController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D622452DEFF004FCD17 /* FFSpecialController.m */; };
-		A4136D702452DEFF004FCD17 /* FFSpecialListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D632452DEFF004FCD17 /* FFSpecialListReformer.m */; };
-		A4136D712452DEFF004FCD17 /* FFSecialDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4136D642452DEFF004FCD17 /* FFSecialDetailView.xib */; };
 		A4136D722452DEFF004FCD17 /* Target_Special.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D652452DEFF004FCD17 /* Target_Special.m */; };
-		A4136D732452DEFF004FCD17 /* FFSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D662452DEFF004FCD17 /* FFSpecialCell.m */; };
-		A4136D742452DEFF004FCD17 /* FFSpecialDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4136D672452DEFF004FCD17 /* FFSpecialDetailController.m */; };
 		A4136D762452DEFF004FCD17 /* special_page.json in Resources */ = {isa = PBXBuildFile; fileRef = A4136D6A2452DEFF004FCD17 /* special_page.json */; };
 		A4136D792452E59B004FCD17 /* personAuth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4136D772452E59B004FCD17 /* personAuth@2x.png */; };
 		A4136D7A2452E59B004FCD17 /* personAuth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4136D782452E59B004FCD17 /* personAuth@3x.png */; };
+		A435D82E245AACAF0059FA1B /* FFSpecialCellBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D81F245AACAF0059FA1B /* FFSpecialCellBottomView.m */; };
+		A435D82F245AACAF0059FA1B /* SpecialAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D823245AACAF0059FA1B /* SpecialAPIRequest.m */; };
+		A435D830245AACAF0059FA1B /* FFSpecialController.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D825245AACAF0059FA1B /* FFSpecialController.m */; };
+		A435D831245AACAF0059FA1B /* FFSpecialListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D826245AACAF0059FA1B /* FFSpecialListReformer.m */; };
+		A435D832245AACAF0059FA1B /* FFSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D827245AACAF0059FA1B /* FFSpecialCell.m */; };
+		A435D833245AACAF0059FA1B /* FFSpecialDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D82B245AACAF0059FA1B /* FFSpecialDetailView.m */; };
+		A435D834245AACAF0059FA1B /* FFSecialDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A435D82C245AACAF0059FA1B /* FFSecialDetailView.xib */; };
+		A435D835245AACAF0059FA1B /* FFSpecialDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D82D245AACAF0059FA1B /* FFSpecialDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,26 +75,26 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		983FE33F54B31D3FDA68CE4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9F3A75D5EA72D771BD68EE7C /* Pods_FFSpecialKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFSpecialKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4136D572452DEFF004FCD17 /* FFSpecialDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialDetailView.h; sourceTree = "<group>"; };
-		A4136D582452DEFF004FCD17 /* FFSpecialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialController.h; sourceTree = "<group>"; };
-		A4136D592452DEFF004FCD17 /* FFSpecialCellBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialCellBottomView.m; sourceTree = "<group>"; };
-		A4136D5A2452DEFF004FCD17 /* SpecialAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialAPIRequest.h; sourceTree = "<group>"; };
-		A4136D5B2452DEFF004FCD17 /* FFSpecialListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialListReformer.h; sourceTree = "<group>"; };
 		A4136D5C2452DEFF004FCD17 /* Target_Special.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Special.h; sourceTree = "<group>"; };
-		A4136D5D2452DEFF004FCD17 /* FFSpecialDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialDetailController.h; sourceTree = "<group>"; };
-		A4136D5E2452DEFF004FCD17 /* FFSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialCell.h; sourceTree = "<group>"; };
-		A4136D5F2452DEFF004FCD17 /* SpecialAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAPIRequest.m; sourceTree = "<group>"; };
-		A4136D602452DEFF004FCD17 /* FFSpecialCellBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialCellBottomView.h; sourceTree = "<group>"; };
-		A4136D612452DEFF004FCD17 /* FFSpecialDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialDetailView.m; sourceTree = "<group>"; };
-		A4136D622452DEFF004FCD17 /* FFSpecialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialController.m; sourceTree = "<group>"; };
-		A4136D632452DEFF004FCD17 /* FFSpecialListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialListReformer.m; sourceTree = "<group>"; };
-		A4136D642452DEFF004FCD17 /* FFSecialDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFSecialDetailView.xib; sourceTree = "<group>"; };
 		A4136D652452DEFF004FCD17 /* Target_Special.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Special.m; sourceTree = "<group>"; };
-		A4136D662452DEFF004FCD17 /* FFSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialCell.m; sourceTree = "<group>"; };
-		A4136D672452DEFF004FCD17 /* FFSpecialDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialDetailController.m; sourceTree = "<group>"; };
 		A4136D6A2452DEFF004FCD17 /* special_page.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = special_page.json; sourceTree = "<group>"; };
 		A4136D772452E59B004FCD17 /* personAuth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personAuth@2x.png"; sourceTree = "<group>"; };
 		A4136D782452E59B004FCD17 /* personAuth@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personAuth@3x.png"; sourceTree = "<group>"; };
+		A435D81E245AACAF0059FA1B /* FFSpecialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialController.h; sourceTree = "<group>"; };
+		A435D81F245AACAF0059FA1B /* FFSpecialCellBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialCellBottomView.m; sourceTree = "<group>"; };
+		A435D820245AACAF0059FA1B /* SpecialAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialAPIRequest.h; sourceTree = "<group>"; };
+		A435D821245AACAF0059FA1B /* FFSpecialListReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialListReformer.h; sourceTree = "<group>"; };
+		A435D822245AACAF0059FA1B /* FFSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialCell.h; sourceTree = "<group>"; };
+		A435D823245AACAF0059FA1B /* SpecialAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAPIRequest.m; sourceTree = "<group>"; };
+		A435D824245AACAF0059FA1B /* FFSpecialCellBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialCellBottomView.h; sourceTree = "<group>"; };
+		A435D825245AACAF0059FA1B /* FFSpecialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialController.m; sourceTree = "<group>"; };
+		A435D826245AACAF0059FA1B /* FFSpecialListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialListReformer.m; sourceTree = "<group>"; };
+		A435D827245AACAF0059FA1B /* FFSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialCell.m; sourceTree = "<group>"; };
+		A435D829245AACAF0059FA1B /* FFSpecialDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialDetailView.h; sourceTree = "<group>"; };
+		A435D82A245AACAF0059FA1B /* FFSpecialDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialDetailController.h; sourceTree = "<group>"; };
+		A435D82B245AACAF0059FA1B /* FFSpecialDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialDetailView.m; sourceTree = "<group>"; };
+		A435D82C245AACAF0059FA1B /* FFSecialDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFSecialDetailView.xib; sourceTree = "<group>"; };
+		A435D82D245AACAF0059FA1B /* FFSpecialDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialDetailController.m; sourceTree = "<group>"; };
 		D8D778C4CF2FE32432107AE0 /* Pods-FFSpecialKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFSpecialKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-FFSpecialKit_Tests/Pods-FFSpecialKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D906FBED8D1295B7A7FDDC1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DAF8E9DB6E58665D6E2BA4F1 /* Pods_FFSpecialKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFSpecialKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,23 +239,10 @@
 		A4136D562452DEFF004FCD17 /* Special */ = {
 			isa = PBXGroup;
 			children = (
+				A435D81D245AACAF0059FA1B /* Home */,
+				A435D828245AACAF0059FA1B /* Detail */,
 				A4136D5C2452DEFF004FCD17 /* Target_Special.h */,
 				A4136D652452DEFF004FCD17 /* Target_Special.m */,
-				A4136D582452DEFF004FCD17 /* FFSpecialController.h */,
-				A4136D622452DEFF004FCD17 /* FFSpecialController.m */,
-				A4136D5E2452DEFF004FCD17 /* FFSpecialCell.h */,
-				A4136D662452DEFF004FCD17 /* FFSpecialCell.m */,
-				A4136D5A2452DEFF004FCD17 /* SpecialAPIRequest.h */,
-				A4136D5F2452DEFF004FCD17 /* SpecialAPIRequest.m */,
-				A4136D5D2452DEFF004FCD17 /* FFSpecialDetailController.h */,
-				A4136D672452DEFF004FCD17 /* FFSpecialDetailController.m */,
-				A4136D572452DEFF004FCD17 /* FFSpecialDetailView.h */,
-				A4136D612452DEFF004FCD17 /* FFSpecialDetailView.m */,
-				A4136D642452DEFF004FCD17 /* FFSecialDetailView.xib */,
-				A4136D602452DEFF004FCD17 /* FFSpecialCellBottomView.h */,
-				A4136D592452DEFF004FCD17 /* FFSpecialCellBottomView.m */,
-				A4136D5B2452DEFF004FCD17 /* FFSpecialListReformer.h */,
-				A4136D632452DEFF004FCD17 /* FFSpecialListReformer.m */,
 			);
 			path = Special;
 			sourceTree = "<group>";
@@ -268,6 +255,35 @@
 				A4136D6A2452DEFF004FCD17 /* special_page.json */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		A435D81D245AACAF0059FA1B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A435D81E245AACAF0059FA1B /* FFSpecialController.h */,
+				A435D825245AACAF0059FA1B /* FFSpecialController.m */,
+				A435D821245AACAF0059FA1B /* FFSpecialListReformer.h */,
+				A435D826245AACAF0059FA1B /* FFSpecialListReformer.m */,
+				A435D820245AACAF0059FA1B /* SpecialAPIRequest.h */,
+				A435D823245AACAF0059FA1B /* SpecialAPIRequest.m */,
+				A435D824245AACAF0059FA1B /* FFSpecialCellBottomView.h */,
+				A435D81F245AACAF0059FA1B /* FFSpecialCellBottomView.m */,
+				A435D822245AACAF0059FA1B /* FFSpecialCell.h */,
+				A435D827245AACAF0059FA1B /* FFSpecialCell.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A435D828245AACAF0059FA1B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A435D82A245AACAF0059FA1B /* FFSpecialDetailController.h */,
+				A435D82D245AACAF0059FA1B /* FFSpecialDetailController.m */,
+				A435D829245AACAF0059FA1B /* FFSpecialDetailView.h */,
+				A435D82B245AACAF0059FA1B /* FFSpecialDetailView.m */,
+				A435D82C245AACAF0059FA1B /* FFSecialDetailView.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		F1CFB58C8EDA919B0F5B7516 /* Pods */ = {
@@ -359,10 +375,10 @@
 			files = (
 				A4136D7A2452E59B004FCD17 /* personAuth@3x.png in Resources */,
 				A4136D792452E59B004FCD17 /* personAuth@2x.png in Resources */,
+				A435D834245AACAF0059FA1B /* FFSecialDetailView.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				A4136D712452DEFF004FCD17 /* FFSecialDetailView.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				A4136D762452DEFF004FCD17 /* special_page.json in Resources */,
 			);
@@ -480,17 +496,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4136D742452DEFF004FCD17 /* FFSpecialDetailController.m in Sources */,
+				A435D835245AACAF0059FA1B /* FFSpecialDetailController.m in Sources */,
 				6003F59E195388D20070C39A /* FFAppDelegate.m in Sources */,
-				A4136D6C2452DEFF004FCD17 /* FFSpecialCellBottomView.m in Sources */,
-				A4136D6D2452DEFF004FCD17 /* SpecialAPIRequest.m in Sources */,
-				A4136D732452DEFF004FCD17 /* FFSpecialCell.m in Sources */,
 				6003F5A7195388D20070C39A /* FFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				A4136D702452DEFF004FCD17 /* FFSpecialListReformer.m in Sources */,
-				A4136D6F2452DEFF004FCD17 /* FFSpecialController.m in Sources */,
+				A435D82E245AACAF0059FA1B /* FFSpecialCellBottomView.m in Sources */,
+				A435D82F245AACAF0059FA1B /* SpecialAPIRequest.m in Sources */,
+				A435D831245AACAF0059FA1B /* FFSpecialListReformer.m in Sources */,
+				A435D830245AACAF0059FA1B /* FFSpecialController.m in Sources */,
+				A435D833245AACAF0059FA1B /* FFSpecialDetailView.m in Sources */,
 				A4136D722452DEFF004FCD17 /* Target_Special.m in Sources */,
-				A4136D6E2452DEFF004FCD17 /* FFSpecialDetailView.m in Sources */,
+				A435D832245AACAF0059FA1B /* FFSpecialCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

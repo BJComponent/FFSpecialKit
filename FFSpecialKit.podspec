@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFSpecialKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of FFSpecialKit.'
 
 # This description is used to generate tags and improve search results.
@@ -34,39 +34,39 @@ TODO: Add long description of the pod here.
   s.resource_bundles = {
       'FFSpecialKit' => ['FFSpecialKit/Assets/*']
   }
-  
+  #不会创建bundle
 #  s.resources = ['FFSpecialKit/Assets/*']
     
-  s.source_files = 'FFSpecialKit/Classes/Special/*'
 
-#  s.subspec 'Special' do |ss|
-#    ss.source_files = 'FFSpecialKit/Classes/Special/*'
-#  end
-#
-#  s.subspec 'Special' do |ss|
-#     ss.subspec 'Detail' do |sss|
-#         sss.source_files = 'FFSpecialKit/Classes/Special/Detail/*'
-#     end
-#     ss.subspec 'Mainpage' do |sss|
-#         sss.source_files = 'FFSpecialKit/Classes/Special/Mainpage/*'
-#     end
-#  end
+  s.subspec 'Special' do |ss|
+     ss.source_files = 'FFSpecialKit/Classes/Special/*'
+     ss.subspec 'Home' do |sss|
+         sss.source_files = 'FFSpecialKit/Classes/Special/Home/*'
+         sss.dependency 'Masonry'
+         sss.dependency 'FFConfigsKit'
+         sss.dependency 'FFAPIs'
+         sss.dependency 'FFToolsKit'
+         sss.dependency 'FFCategoryKit'
+         sss.dependency 'FFMainViewKit'
+         sss.dependency 'FFReformerKeysKit'
+         sss.dependency 'FFAuhtorKit_Category'
+         sss.dependency 'FFSpecialKit/Special/Detail'#本地依赖
+     end
+     ss.subspec 'Detail' do |sss|
+         sss.source_files = 'FFSpecialKit/Classes/Special/Detail/*'
+     end
+  end
   
-#   s.resource_bundles = {
-#     'FFSpecialKit' => ['FFSpecialKit/Assets/*']
-#   }
+#  s.dependency 'Masonry'
+#  s.dependency 'YYWebImage'
+#  s.dependency 'ReactiveCocoa'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Masonry'
-  s.dependency 'YYWebImage'
-  s.dependency 'ReactiveCocoa'
-  s.dependency 'FFMainViewKit'
-  s.dependency 'FFReformerKeysKit'
-  s.dependency 'FFConfigsKit'
-  s.dependency 'FFAPIs'
-  s.dependency 'FFToolsKit'
-  s.dependency 'FFCategoryKit'
+#  s.dependency 'FFMainViewKit'
+#  s.dependency 'FFReformerKeysKit'
+#  s.dependency 'FFConfigsKit'
+#  s.dependency 'FFAPIs'
+#  s.dependency 'FFToolsKit'
+#  s.dependency 'FFCategoryKit'
   
-  s.dependency 'FFAuhtorKit_Category'
+#  s.dependency 'FFAuhtorKit_Category'
 end

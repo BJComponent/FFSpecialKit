@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "FFCellProtocol.h"
 #import <FFMainViewKit/FFMainViewKit-umbrella.h>
 
 @interface FFSpecialCell : UITableViewCell<FFCellProtocol>

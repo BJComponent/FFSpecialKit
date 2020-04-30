@@ -265,20 +265,25 @@
     if (_authImgView == nil) {
         _authImgView = [[UIImageView alloc] init];
         
+        NSBundle *xibBundle = [NSBundle bundleForClass:[self class]];
+        NSInteger scale = [[UIScreen mainScreen] scale];
+        NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", @"personAuth",scale];
+        _authImgView.image = [UIImage imageWithContentsOfFile:[xibBundle pathForResource:imgName ofType:nil]];
+        
         //到指定目录
-        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
-        bundleURL = [bundleURL URLByAppendingPathComponent:@"FFSpecialKit"];
-        bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
-        if (bundleURL) {
-            NSBundle *imgBundle = [NSBundle bundleWithURL:bundleURL];
-            bundleURL = [imgBundle URLForResource:@"FFSpecialKit" withExtension:@"bundle"];
-            if (bundleURL) {
-                NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
-                NSInteger scale = [[UIScreen mainScreen] scale];
-                NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", @"personAuth",scale];
-                _authImgView.image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
-            }
-        }
+//        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+//        bundleURL = [bundleURL URLByAppendingPathComponent:@"FFSpecialKit"];
+//        bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
+//        if (bundleURL) {
+//            NSBundle *imgBundle = [NSBundle bundleWithURL:bundleURL];
+//            bundleURL = [imgBundle URLForResource:@"FFSpecialKit" withExtension:@"bundle"];
+//            if (bundleURL) {
+//                NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+//                NSInteger scale = [[UIScreen mainScreen] scale];
+//                NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", @"personAuth",scale];
+//                _authImgView.image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
+//            }
+//        }
     }
     return _authImgView;
 }

@@ -1,6 +1,6 @@
 {
   "name": "FFSpecialKit",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "summary": "A short description of FFSpecialKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/BJComponent/FFSpecialKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/BJComponent/FFSpecialKit.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"
@@ -23,37 +23,49 @@
       "FFSpecialKit/Assets/*"
     ]
   },
-  "source_files": "FFSpecialKit/Classes/Special/*",
-  "dependencies": {
-    "Masonry": [
+  "subspecs": [
+    {
+      "name": "Special",
+      "source_files": "FFSpecialKit/Classes/Special/*",
+      "subspecs": [
+        {
+          "name": "Home",
+          "source_files": "FFSpecialKit/Classes/Special/Home/*",
+          "dependencies": {
+            "Masonry": [
 
-    ],
-    "YYWebImage": [
+            ],
+            "FFConfigsKit": [
 
-    ],
-    "ReactiveCocoa": [
+            ],
+            "FFAPIs": [
 
-    ],
-    "FFMainViewKit": [
+            ],
+            "FFToolsKit": [
 
-    ],
-    "FFReformerKeysKit": [
+            ],
+            "FFCategoryKit": [
 
-    ],
-    "FFConfigsKit": [
+            ],
+            "FFMainViewKit": [
 
-    ],
-    "FFAPIs": [
+            ],
+            "FFReformerKeysKit": [
 
-    ],
-    "FFToolsKit": [
+            ],
+            "FFAuhtorKit_Category": [
 
-    ],
-    "FFCategoryKit": [
+            ],
+            "FFSpecialKit/Special/Detail": [
 
-    ],
-    "FFAuhtorKit_Category": [
-
-    ]
-  }
+            ]
+          }
+        },
+        {
+          "name": "Detail",
+          "source_files": "FFSpecialKit/Classes/Special/Detail/*"
+        }
+      ]
+    }
+  ]
 }
