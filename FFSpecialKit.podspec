@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFSpecialKit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of FFSpecialKit.'
 
 # This description is used to generate tags and improve search results.
@@ -43,12 +43,10 @@ TODO: Add long description of the pod here.
      ss.subspec 'Home' do |sss|
          sss.source_files = 'FFSpecialKit/Classes/Special/Home/*'
          sss.dependency 'Masonry'
-         sss.dependency 'FFConfigsKit'
+         sss.dependency 'YYWebImage'
+         sss.dependency 'FFUtils'
          sss.dependency 'FFAPIs'
-         sss.dependency 'FFToolsKit'
-         sss.dependency 'FFCategoryKit'
-         sss.dependency 'FFMainViewKit'
-         sss.dependency 'FFReformerKeysKit'
+         sss.dependency 'FFWdiget'
          sss.dependency 'FFAuhtorKit_Category'
          sss.dependency 'FFSpecialKit/Special/Detail'#本地依赖
      end
@@ -57,16 +55,4 @@ TODO: Add long description of the pod here.
      end
   end
   
-#  s.dependency 'Masonry'
-#  s.dependency 'YYWebImage'
-#  s.dependency 'ReactiveCocoa'
-
-#  s.dependency 'FFMainViewKit'
-#  s.dependency 'FFReformerKeysKit'
-#  s.dependency 'FFConfigsKit'
-#  s.dependency 'FFAPIs'
-#  s.dependency 'FFToolsKit'
-#  s.dependency 'FFCategoryKit'
-  
-#  s.dependency 'FFAuhtorKit_Category'
 end

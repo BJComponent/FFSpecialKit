@@ -11,10 +11,10 @@
 //#import "FFSpecialListReformerKeys.h"
 //#import "FFAuthorListReformerKeys.h"
 //#import "FFAuthorListReformer.h"
-#import <FFConfigsKit/FFConfigsKit-umbrella.h>
+#import <FFUtils/FFUtils.h>
 #import <Masonry/Masonry.h>
-#import <FFCategoryKit/FFCategoryKit-umbrella.h>
-#import <FFReformerKeysKit/FFReformerKeysKit-umbrella.h>
+//#import <FFCategoryKit/FFCategoryKit-umbrella.h>
+//#import <FFReformerKeysKit/FFReformerKeysKit-umbrella.h>
 
 @interface FFSpecialCell ()
 
@@ -164,15 +164,15 @@
 //        self.authImgView.image = author[kAuthorPropertyListKeyAuthIcon];
 //    }
     
-    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
-    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
-    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
-    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
-    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
-    
-    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
-    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
-    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
+//    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
+//    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
+//    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
+//    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
+//    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
+//
+//    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
+//    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
+//    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
 
 //    @weakify(self)
 //    [RACObserve(self, dataDict) subscribeNext:^(NSDictionary *data) {
@@ -208,9 +208,9 @@
 }
 
 - (void)tapAction {
-    if ([self.delegate respondsToSelector:@selector(cellHeaderIconDidClick:params:)]) {
-        [self.delegate cellHeaderIconDidClick:self.indexPath params:nil];
-    }
+//    if ([self.delegate respondsToSelector:@selector(cellHeaderIconDidClick:params:)]) {
+//        [self.delegate cellHeaderIconDidClick:self.indexPath params:nil];
+//    }
 }
 
 #pragma mark - getter

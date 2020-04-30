@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <FFAPIs/FFAPIs-umbrella.h>
-#import <FFReformerKeysKit/FFReformerKeysKit-umbrella.h>
+#import <FFUtils/FFUtils.h>
 
 @interface FFSpecialListReformer : NSDictionary <FFReformProtocol>
 

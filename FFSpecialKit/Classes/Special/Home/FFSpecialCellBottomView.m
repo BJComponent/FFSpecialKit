@@ -8,8 +8,7 @@
 
 #import "FFSpecialCellBottomView.h"
 #import <Masonry/Masonry.h>
-#import <FFConfigsKit/FFConfigsKit-umbrella.h>
-#import <FFCategoryKit/FFCategoryKit-umbrella.h>
+#import <FFUtils/FFUtils.h>
 
 @implementation FFSpecialCellBottomView
 

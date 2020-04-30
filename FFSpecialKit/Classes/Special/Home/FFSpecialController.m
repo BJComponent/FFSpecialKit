@@ -12,9 +12,9 @@
 #import "FFSpecialDetailController.h"
 #import "FFSpecialCell.h"
 #import <FFAPIs/FFAPIs-umbrella.h>
-#import <FFToolsKit/FFToolsKit-umbrella.h>
-#import <FFCategoryKit/FFCategoryKit-umbrella.h>
-#import <FFAuhtorKit_Category/FFAuhtorKit_Category-umbrella.h>
+#import <FFUtils/FFUtils.h>
+#import "CTMediator+Ahthor.h"
+
 
 @interface FFSpecialController ()<APIResponseProtocol,FFCellProtocol>
 
@@ -30,20 +30,20 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.mainView];
-    [HUDTools zj_showLoadingInView:self.view];
+//    [HUDTools zj_showLoadingInView:self.view];
     [self request];
 }
 
 #pragma mark -- CustomDelegate
 - (void)apiResponseSuccess:(id<APIRequestProtocol>)request {
-    [HUDTools zj_hideInView:self.view];
+//    [HUDTools zj_hideInView:self.view];
     
     NSArray *dataArray = [request fetchDataWithReformer:[[FFSpecialListReformer alloc] init]];
     [self.mainView configWithData:dataArray];
 }
 
 - (void)apiResponseFaild:(id<APIRequestProtocol>)request error:(NSError *)error {
-    [HUDTools zj_hideInView:self.view];
+//    [HUDTools zj_hideInView:self.view];
     NSArray *dataArray = [request fetchDataWithReformer:[[FFSpecialListReformer alloc] init]];
     [self.mainView configWithData:dataArray];
 }

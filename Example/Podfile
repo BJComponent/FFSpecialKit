@@ -10,13 +10,13 @@ target 'FFSpecialKit_Example' do
   
   pod 'Masonry'
   pod 'YYWebImage'
-  pod 'ReactiveCocoa', '~> 2.5'
-  pod 'FFCategoryKit', '~> 0.1.1'
-  pod 'FFToolsKit', '~> 0.1.0'
-  pod 'FFAPIs', '~> 0.1.1'
-  pod 'FFConfigsKit', '~> 0.1.0'
-  pod 'FFReformerKeysKit', '~> 0.1.0'
-  pod 'FFMainViewKit', '~> 0.1.0'
+#  pod 'ReactiveCocoa', '~> 2.5'
+  
+  pod 'FFUtils'
+  pod 'FFAPIs', '~> 0.1.2'
+  pod 'FFWdiget'
+  
+#  pod 'FFToolsKit'
   
   pod 'FFAuhtorKit_Category'
 
