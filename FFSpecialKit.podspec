@@ -30,8 +30,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
   
-  s.resources = ['FFSpecialKit/Assets/*']
-  
+  #自动创建FFSpecialKit.bundle
+  s.resource_bundles = {
+      'FFSpecialKit' => ['FFSpecialKit/Assets/*']
+  }
+    
   s.source_files = 'FFSpecialKit/Classes/Special/*'
 
 #  s.subspec 'Special' do |ss|
