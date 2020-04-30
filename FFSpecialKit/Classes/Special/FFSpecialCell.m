@@ -263,12 +263,10 @@
 
 - (UIImageView *)authImgView{
     if (_authImgView == nil) {
-//        NSInteger scale = [[UIScreen mainScreen] scale];
-//        NSString *name = [NSString stringWithFormat:@"personAuth@%zdx",scale];
-//        _authImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:name]];
+        _authImgView = [[UIImageView alloc] init];
         
         //到指定目录
-        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"FFSpecialKit" withExtension:nil];
+        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
         bundleURL = [bundleURL URLByAppendingPathComponent:@"FFSpecialKit"];
         bundleURL = [bundleURL URLByAppendingPathExtension:@"framework"];
         if (bundleURL) {
