@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"专题的详情";
+    self.title = @"专题的详情换了boundle";
     self.view.backgroundColor = [UIColor greenColor];
     
     NSBundle *xibBundle = [NSBundle bundleForClass:[self class]];

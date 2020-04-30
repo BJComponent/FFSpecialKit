@@ -34,6 +34,8 @@ TODO: Add long description of the pod here.
   s.resource_bundles = {
       'FFSpecialKit' => ['FFSpecialKit/Assets/*']
   }
+  
+#  s.resources = ['FFSpecialKit/Assets/*']
     
   s.source_files = 'FFSpecialKit/Classes/Special/*'
 
