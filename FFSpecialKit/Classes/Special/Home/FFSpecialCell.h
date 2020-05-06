@@ -11,6 +11,4 @@
 
 @interface FFSpecialCell : UITableViewCell<FFCellProtocol>
 
-@property (nonatomic, copy) NSDictionary *dataDict;
-
 @end

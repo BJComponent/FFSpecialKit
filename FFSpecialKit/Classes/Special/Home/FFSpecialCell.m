@@ -146,32 +146,10 @@
 
 }
 
-- (void)setDataDict:(NSDictionary *)dataDict {
-    _dataDict = dataDict;
-    
-    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
-    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
-    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
-    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
-    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
-
-    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
-    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
-    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
-    
-//    FFAuthorListReformer *reformer = [[FFAuthorListReformer alloc] init];
-//    NSDictionary *author = [reformer reformData:data[kAuthorReformer]];
-//    [self.pictureView yy_setImageWithURL:data[kSpecialPropertyListKeyPictureURL] placeholder:[UIImage imageNamed:@"placehodler"]];
-//    [self.headImgView yy_setImageWithURL:author[kAuthorPropertyListHeaderURL] placeholder:[UIImage imageNamed:@"pc_default_avatar"]];
-//    if (author[kAuthorPropertyListKeyAuthIcon]) {
-//        self.authImgView.image = author[kAuthorPropertyListKeyAuthIcon];
-//    }
-}
-
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-//    [self handleData];
+    [self handleData];
 }
 
 
@@ -186,15 +164,15 @@
 //        self.authImgView.image = author[kAuthorPropertyListKeyAuthIcon];
 //    }
     
-//    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
-//    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
-//    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
-//    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
-//    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
-//
-//    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
-//    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
-//    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
+    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
+    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
+    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
+    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
+    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
+
+    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
+    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
+    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
 
 //    @weakify(self)
 //    [RACObserve(self, dataDict) subscribeNext:^(NSDictionary *data) {
@@ -230,9 +208,9 @@
 }
 
 - (void)tapAction {
-//    if ([self.delegate respondsToSelector:@selector(cellHeaderIconDidClick:params:)]) {
-//        [self.delegate cellHeaderIconDidClick:self.indexPath params:nil];
-//    }
+    if ([self.delegate respondsToSelector:@selector(cellHeaderIconDidClick:params:)]) {
+        [self.delegate cellHeaderIconDidClick:self.indexPath params:nil];
+    }
 }
 
 #pragma mark - getter
