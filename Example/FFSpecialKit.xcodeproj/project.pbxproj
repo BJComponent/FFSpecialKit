@@ -266,10 +266,10 @@
 				A435D826245AACAF0059FA1B /* FFSpecialListReformer.m */,
 				A435D820245AACAF0059FA1B /* SpecialAPIRequest.h */,
 				A435D823245AACAF0059FA1B /* SpecialAPIRequest.m */,
-				A435D824245AACAF0059FA1B /* FFSpecialCellBottomView.h */,
-				A435D81F245AACAF0059FA1B /* FFSpecialCellBottomView.m */,
 				A435D822245AACAF0059FA1B /* FFSpecialCell.h */,
 				A435D827245AACAF0059FA1B /* FFSpecialCell.m */,
+				A435D824245AACAF0059FA1B /* FFSpecialCellBottomView.h */,
+				A435D81F245AACAF0059FA1B /* FFSpecialCellBottomView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";

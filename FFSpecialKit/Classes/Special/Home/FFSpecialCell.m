@@ -338,7 +338,7 @@
 - (UIImageView *)underlineImgView{
     if (_underlineImgView == nil) {
         _underlineImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"underLine"]];
-        _underlineImgView.backgroundColor = [UIColor greenColor];
+        _underlineImgView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     return _underlineImgView;
 }
