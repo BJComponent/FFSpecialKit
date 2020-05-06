@@ -13,6 +13,7 @@
 //#import "FFAuthorListReformer.h"
 #import <FFUtils/FFUtils.h>
 #import <Masonry/Masonry.h>
+#import <YYWebImage/YYWebImage.h>
 //#import <FFCategoryKit/FFCategoryKit-umbrella.h>
 //#import <FFReformerKeysKit/FFReformerKeysKit-umbrella.h>
 
@@ -158,12 +159,12 @@
     
 //    FFAuthorListReformer *reformer = [[FFAuthorListReformer alloc] init];
 //    NSDictionary *author = [reformer reformData:data[kAuthorReformer]];
-//    [self.pictureView yy_setImageWithURL:data[kSpecialPropertyListKeyPictureURL] placeholder:[UIImage imageNamed:@"placehodler"]];
 //    [self.headImgView yy_setImageWithURL:author[kAuthorPropertyListHeaderURL] placeholder:[UIImage imageNamed:@"pc_default_avatar"]];
 //    if (author[kAuthorPropertyListKeyAuthIcon]) {
 //        self.authImgView.image = author[kAuthorPropertyListKeyAuthIcon];
 //    }
     
+    [self.pictureView yy_setImageWithURL:self.dataDict[kSpecialPropertyListKeyPictureURL] placeholder:[UIImage imageNamed:@"placehodler"]];
     self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
     self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
     self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
@@ -251,7 +252,7 @@
 
 - (UIImageView *)headImgView{
     if (_headImgView == nil) {
-        _headImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"pc_default_avatar"]];
+        _headImgView = [[UIImageView alloc]initWithImage:[UIImage ff_imagePathWithName:@"pc_default_avatar" bundle:@"FFSpecialKit" targetClass:[self class]]];
         _headImgView.layer.cornerRadius = FFHeaderImageHeight * 0.5;
         _headImgView.layer.masksToBounds = YES;
         _headImgView.layer.borderWidth = 0.5;
@@ -265,10 +266,10 @@
     if (_authImgView == nil) {
         _authImgView = [[UIImageView alloc] init];
         
-        NSBundle *xibBundle = [NSBundle bundleForClass:[self class]];
-        NSInteger scale = [[UIScreen mainScreen] scale];
-        NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", @"personAuth",scale];
-        _authImgView.image = [UIImage imageWithContentsOfFile:[xibBundle pathForResource:imgName ofType:nil]];
+//        NSBundle *xibBundle = [NSBundle bundleForClass:[self class]];
+//        NSInteger scale = [[UIScreen mainScreen] scale];
+//        NSString *imgName = [NSString stringWithFormat:@"%@@%zdx.png", @"personAuth",scale];
+//        _authImgView.image = [UIImage imageWithContentsOfFile:[xibBundle pathForResource:imgName ofType:nil]];
         
         //到指定目录
 //        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
@@ -284,6 +285,7 @@
 //                _authImgView.image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
 //            }
 //        }
+        _authImgView.image = [UIImage ff_imagePathWithName:@"personAuth" bundle:@"FFSpecialKit" targetClass:[self class]];
     }
     return _authImgView;
 }
