@@ -14,7 +14,7 @@ target 'FFSpecialKit_Example' do
   
   pod 'FFAPIs', '~> 0.1.2'
   pod 'FFUtils', '~> 0.1.3'
-  pod 'FFWdiget', git:'https://github.com/BJComponent/FFWdiget.git'
+  pod 'FFWdiget', '~> 0.1.1'
   
   pod 'FFAuhtorKit_Category'
 
