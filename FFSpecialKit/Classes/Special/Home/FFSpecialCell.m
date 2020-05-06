@@ -146,14 +146,36 @@
 
 }
 
+- (void)setDataDict:(NSDictionary *)dataDict {
+    _dataDict = dataDict;
+    
+    self.identityLabel.text = self.dataDict[kSpecialPropertyListKeyAuthorIdentity];
+    self.categoryLabel.text = self.dataDict[kSpecialPropertyListKeyCategoryName];
+    self.authorLabel.text = self.dataDict[kAuthorPropertyListKeyName];
+    self.titleLabel.text = self.dataDict[kSpecialPropertyListKeyTitle];
+    self.descLabel.text = self.dataDict[kSpecialPropertyListKeyDesc];
+
+    [self.bottomView.readBtn setTitle:self.dataDict[kSpecialPropertyListKeyRead] forState:UIControlStateNormal];
+    [self.bottomView.followBtn setTitle:self.dataDict[kSpecialPropertyListKeyFollowNum] forState:UIControlStateNormal];
+    [self.bottomView.commentBtn setTitle:self.dataDict[kSpecialPropertyListKeyCommentNum] forState:UIControlStateNormal];
+    
+//    FFAuthorListReformer *reformer = [[FFAuthorListReformer alloc] init];
+//    NSDictionary *author = [reformer reformData:data[kAuthorReformer]];
+//    [self.pictureView yy_setImageWithURL:data[kSpecialPropertyListKeyPictureURL] placeholder:[UIImage imageNamed:@"placehodler"]];
+//    [self.headImgView yy_setImageWithURL:author[kAuthorPropertyListHeaderURL] placeholder:[UIImage imageNamed:@"pc_default_avatar"]];
+//    if (author[kAuthorPropertyListKeyAuthIcon]) {
+//        self.authImgView.image = author[kAuthorPropertyListKeyAuthIcon];
+//    }
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    [self handleData];
+//    [self handleData];
 }
 
 
-#pragma mark - handle data
+#pragma mark - handle data (RAC)
 - (void)handleData {
     
 //    FFAuthorListReformer *reformer = [[FFAuthorListReformer alloc] init];
