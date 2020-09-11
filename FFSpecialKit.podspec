@@ -47,7 +47,7 @@ TODO: Add long description of the pod here.
     s.subspec 'Special' do |ss|
         ss.source_files = 'FFSpecialKit/Classes/Special/*'
         ss.subspec 'Home' do |sss|
-            sss.source_files = 'FFSpecialKit/Classes/Special/Home/*'
+            sss.source_files = 'FFSpecialKit/Classes/Special/Home/**/*.{h,m}'
             sss.dependency 'Masonry'
             sss.dependency 'YYWebImage'
             sss.dependency 'FFWdiget'
@@ -55,7 +55,7 @@ TODO: Add long description of the pod here.
             sss.dependency 'FFSpecialKit/Special/Detail'#本地依赖
         end
         ss.subspec 'Detail' do |sss|
-            sss.source_files = 'FFSpecialKit/Classes/Special/Detail/*'
+            sss.source_files = 'FFSpecialKit/Classes/Special/Detail/**/*.{h,m}'
         end
     end
   

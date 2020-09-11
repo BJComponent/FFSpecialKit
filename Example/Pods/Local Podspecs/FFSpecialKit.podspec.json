@@ -36,7 +36,7 @@
       "subspecs": [
         {
           "name": "Home",
-          "source_files": "FFSpecialKit/Classes/Special/Home/*",
+          "source_files": "FFSpecialKit/Classes/Special/Home/**/*.{h,m}",
           "dependencies": {
             "Masonry": [
 
@@ -57,7 +57,7 @@
         },
         {
           "name": "Detail",
-          "source_files": "FFSpecialKit/Classes/Special/Detail/*"
+          "source_files": "FFSpecialKit/Classes/Special/Detail/**/*.{h,m}"
         }
       ]
     }
