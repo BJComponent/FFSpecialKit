@@ -13,7 +13,7 @@ target 'FFSpecialKit_Example' do
 #  pod 'ReactiveCocoa', '~> 2.5'
   
   pod 'FFAPIs', '~> 0.1.2'
-  pod 'FFUtils', '~> 0.1.4'
+  pod 'FFUtils', '~> 0.1.5'
   pod 'FFWdiget', '~> 0.1.1'
   
   pod 'FFAuhtorKit_Category'

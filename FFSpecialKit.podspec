@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
          sss.source_files = 'FFSpecialKit/Classes/Special/Home/*'
          sss.dependency 'Masonry'
          sss.dependency 'YYWebImage'
-         sss.dependency 'FFUtils'
+         sss.dependency 'FFUtils', '~> 0.1.5'
          sss.dependency 'FFAPIs'
          sss.dependency 'FFWdiget'
          sss.dependency 'FFAuhtorKit_Category'
