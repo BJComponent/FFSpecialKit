@@ -41,22 +41,22 @@ TODO: Add long description of the pod here.
   #不会创建bundle
 #  s.resources = ['FFSpecialKit/Assets/*']
     
+    s.dependency 'FFUtils', '~> 0.1.5'
+    s.dependency 'FFAPIs', '~> 0.1.3'
 
-  s.subspec 'Special' do |ss|
-     ss.source_files = 'FFSpecialKit/Classes/Special/*'
-     ss.subspec 'Home' do |sss|
-         sss.source_files = 'FFSpecialKit/Classes/Special/Home/*'
-         sss.dependency 'Masonry'
-         sss.dependency 'YYWebImage'
-         sss.dependency 'FFUtils', '~> 0.1.5'
-         sss.dependency 'FFAPIs', '~> 0.1.3'
-         sss.dependency 'FFWdiget'
-         sss.dependency 'FFAuhtorKit_Category'
-         sss.dependency 'FFSpecialKit/Special/Detail'#本地依赖
-     end
-     ss.subspec 'Detail' do |sss|
-         sss.source_files = 'FFSpecialKit/Classes/Special/Detail/*'
-     end
-  end
+    s.subspec 'Special' do |ss|
+        ss.source_files = 'FFSpecialKit/Classes/Special/*'
+        ss.subspec 'Home' do |sss|
+            sss.source_files = 'FFSpecialKit/Classes/Special/Home/*'
+            sss.dependency 'Masonry'
+            sss.dependency 'YYWebImage'
+            sss.dependency 'FFWdiget'
+            sss.dependency 'FFAuhtorKit_Category'
+            sss.dependency 'FFSpecialKit/Special/Detail'#本地依赖
+        end
+        ss.subspec 'Detail' do |sss|
+            sss.source_files = 'FFSpecialKit/Classes/Special/Detail/*'
+        end
+    end
   
 end

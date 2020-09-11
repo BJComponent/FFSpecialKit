@@ -21,6 +21,14 @@
   "resources": [
     "FFSpecialKit/Assets/*.bundle"
   ],
+  "dependencies": {
+    "FFUtils": [
+      "~> 0.1.5"
+    ],
+    "FFAPIs": [
+      "~> 0.1.3"
+    ]
+  },
   "subspecs": [
     {
       "name": "Special",
@@ -35,12 +43,6 @@
             ],
             "YYWebImage": [
 
-            ],
-            "FFUtils": [
-              "~> 0.1.5"
-            ],
-            "FFAPIs": [
-              "~> 0.1.3"
             ],
             "FFWdiget": [
 

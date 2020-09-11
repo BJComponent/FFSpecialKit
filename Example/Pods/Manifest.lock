@@ -24,11 +24,17 @@ PODS:
     - CTMediator
     - FFAPIs
   - FFSpecialKit (0.1.6):
+    - FFAPIs (~> 0.1.3)
     - FFSpecialKit/Special (= 0.1.6)
+    - FFUtils (~> 0.1.5)
   - FFSpecialKit/Special (0.1.6):
+    - FFAPIs (~> 0.1.3)
     - FFSpecialKit/Special/Detail (= 0.1.6)
     - FFSpecialKit/Special/Home (= 0.1.6)
-  - FFSpecialKit/Special/Detail (0.1.6)
+    - FFUtils (~> 0.1.5)
+  - FFSpecialKit/Special/Detail (0.1.6):
+    - FFAPIs (~> 0.1.3)
+    - FFUtils (~> 0.1.5)
   - FFSpecialKit/Special/Home (0.1.6):
     - FFAPIs (~> 0.1.3)
     - FFAuhtorKit_Category
@@ -88,7 +94,7 @@ SPEC CHECKSUMS:
   CTMediator: 6a05e9f1098b2d2fbc9d19cc7f28e94c3a08b5d2
   FFAPIs: 06309755ffd38a4628981c29ddde362d3612e65a
   FFAuhtorKit_Category: 4c8f05c933d8ac9aa60280935cce3f4a9fa0989b
-  FFSpecialKit: 76dbbfb9579fa49ffa4e0e59e60260621d526499
+  FFSpecialKit: 9685921353adc508f9766c900174a98c8da3de1b
   FFUtils: bb931393f38c1ad1aa6ffa89eba715475400f3a8
   FFWdiget: 6d7b6f092f42f8deb91fcb6681dbd4b373ef270c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
