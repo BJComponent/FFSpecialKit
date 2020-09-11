@@ -49,7 +49,7 @@ TODO: Add long description of the pod here.
          sss.dependency 'Masonry'
          sss.dependency 'YYWebImage'
          sss.dependency 'FFUtils', '~> 0.1.5'
-         sss.dependency 'FFAPIs'
+         sss.dependency 'FFAPIs', '~> 0.1.3'
          sss.dependency 'FFWdiget'
          sss.dependency 'FFAuhtorKit_Category'
          sss.dependency 'FFSpecialKit/Special/Detail'#本地依赖
