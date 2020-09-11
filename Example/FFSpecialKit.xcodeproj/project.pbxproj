@@ -31,8 +31,6 @@
 		A435D830245AACAF0059FA1B /* FFSpecialController.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D825245AACAF0059FA1B /* FFSpecialController.m */; };
 		A435D831245AACAF0059FA1B /* FFSpecialListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D826245AACAF0059FA1B /* FFSpecialListReformer.m */; };
 		A435D832245AACAF0059FA1B /* FFSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D827245AACAF0059FA1B /* FFSpecialCell.m */; };
-		A435D833245AACAF0059FA1B /* FFSpecialDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D82B245AACAF0059FA1B /* FFSpecialDetailView.m */; };
-		A435D834245AACAF0059FA1B /* FFSecialDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A435D82C245AACAF0059FA1B /* FFSecialDetailView.xib */; };
 		A435D835245AACAF0059FA1B /* FFSpecialDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D82D245AACAF0059FA1B /* FFSpecialDetailController.m */; };
 /* End PBXBuildFile section */
 
@@ -86,10 +84,7 @@
 		A435D825245AACAF0059FA1B /* FFSpecialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialController.m; sourceTree = "<group>"; };
 		A435D826245AACAF0059FA1B /* FFSpecialListReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialListReformer.m; sourceTree = "<group>"; };
 		A435D827245AACAF0059FA1B /* FFSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialCell.m; sourceTree = "<group>"; };
-		A435D829245AACAF0059FA1B /* FFSpecialDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialDetailView.h; sourceTree = "<group>"; };
 		A435D82A245AACAF0059FA1B /* FFSpecialDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpecialDetailController.h; sourceTree = "<group>"; };
-		A435D82B245AACAF0059FA1B /* FFSpecialDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialDetailView.m; sourceTree = "<group>"; };
-		A435D82C245AACAF0059FA1B /* FFSecialDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFSecialDetailView.xib; sourceTree = "<group>"; };
 		A435D82D245AACAF0059FA1B /* FFSpecialDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpecialDetailController.m; sourceTree = "<group>"; };
 		D8D778C4CF2FE32432107AE0 /* Pods-FFSpecialKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFSpecialKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-FFSpecialKit_Tests/Pods-FFSpecialKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D906FBED8D1295B7A7FDDC1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -273,9 +268,6 @@
 			children = (
 				A435D82A245AACAF0059FA1B /* FFSpecialDetailController.h */,
 				A435D82D245AACAF0059FA1B /* FFSpecialDetailController.m */,
-				A435D829245AACAF0059FA1B /* FFSpecialDetailView.h */,
-				A435D82B245AACAF0059FA1B /* FFSpecialDetailView.m */,
-				A435D82C245AACAF0059FA1B /* FFSecialDetailView.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -368,7 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4178CAF2462B1D800DB6A98 /* FFSpecialKit.bundle in Resources */,
-				A435D834245AACAF0059FA1B /* FFSecialDetailView.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -484,7 +475,6 @@
 				A435D82F245AACAF0059FA1B /* SpecialAPIRequest.m in Sources */,
 				A435D831245AACAF0059FA1B /* FFSpecialListReformer.m in Sources */,
 				A435D830245AACAF0059FA1B /* FFSpecialController.m in Sources */,
-				A435D833245AACAF0059FA1B /* FFSpecialDetailView.m in Sources */,
 				A4136D722452DEFF004FCD17 /* Target_Special.m in Sources */,
 				A435D832245AACAF0059FA1B /* FFSpecialCell.m in Sources */,
 			);

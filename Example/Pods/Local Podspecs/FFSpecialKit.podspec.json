@@ -19,7 +19,7 @@
     "ios": "8.0"
   },
   "resources": [
-    "FFSpecialKit/Assets/*.bundle"
+    "FFSpecialKit/Assets/*"
   ],
   "dependencies": {
     "FFUtils": [

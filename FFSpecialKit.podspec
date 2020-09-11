@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
 #  }
 
   #不会创建bundle
-#  s.resources = ['FFSpecialKit/Assets/*']
+  s.resources = ['FFSpecialKit/Assets/*']
     
     s.dependency 'FFUtils', '~> 0.1.5'
     s.dependency 'FFAPIs', '~> 0.1.3'
