@@ -22,10 +22,22 @@
     "FFSpecialKit/Assets/*"
   ],
   "dependencies": {
+    "Masonry": [
+
+    ],
+    "YYWebImage": [
+
+    ],
     "FFUtils": [
 
     ],
     "FFAPIs": [
+
+    ],
+    "FFWdiget": [
+
+    ],
+    "FFAuhtorKit_Category": [
 
     ]
   },
@@ -38,18 +50,6 @@
           "name": "Home",
           "source_files": "FFSpecialKit/Classes/Special/Home/**/*.{h,m}",
           "dependencies": {
-            "Masonry": [
-
-            ],
-            "YYWebImage": [
-
-            ],
-            "FFWdiget": [
-
-            ],
-            "FFAuhtorKit_Category": [
-
-            ],
             "FFSpecialKit/Special/Detail": [
 
             ]
